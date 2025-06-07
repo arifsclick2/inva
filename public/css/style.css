@@ -1,0 +1,198 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #fff;
+    padding-bottom: 20px; /* Ensure footer doesn't overlap content */
+    min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+}
+
+/* Header & Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .container {
+    background-color: #333; /* Match header background */
+}
+
+
+/* Main Content Area */
+main {
+    padding-top: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for width 100% */
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    display: inline-block;
+    background: #0779e4; /* Primary button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+form button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Links styled as buttons or secondary actions */
+a.button, form a {
+    display: inline-block;
+    background: #6c757d; /* Secondary button color */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+form a:hover {
+    background: #545b62;
+}
+
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #333;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #0779e4;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+
+/* Messages */
+.errors {
+    color: #D8000C; /* Red */
+    background-color: #FFD2D2; /* Light red */
+    border: 1px solid #D8000C;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.errors p {
+    margin: 0;
+}
+
+.success {
+    color: #4F8A10; /* Green */
+    background-color: #DFF2BF; /* Light green */
+    border: 1px solid #4F8A10;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.success p {
+    margin: 0;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    /* margin-top: 20px; */ /* Removed to allow container to push it down */
+    /* position: fixed; */ /* Can cause overlap, be careful */
+    /* bottom: 0; */
+    /* width: 100%; */
+}
+
+footer p {
+    margin: 0;
+}
